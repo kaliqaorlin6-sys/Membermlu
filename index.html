@@ -1,20 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Member MLU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member MLU</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family:Arial;text-align:center;">
-    <h1>MLU - Maka Lintas Utara</h1>
-    <p>Beda Rangka, Beda Warna, Satu Keluarga</p>
-
-    <h2>Daftar Anggota</h2>
-
-    <div>
-        <img src="logo.png" width="150">
-        <h3>Sandi (Dayyan)</h3>
-        <p>Wakil Ketua</p>
-        <p>ID MLU: 0002-2005</p>
+<body>
+<header class="hero">
+    <div class="overlay">
+        <h1>MLU - Maka Lintas Utara</h1>
+        <p>Beda Rangka, Beda Warna, Satu Keluarga</p>
+        <a href="#anggota" class="btn">Lihat Anggota</a>
     </div>
+</header>
+
+<nav>
+    <a href="#">Beranda</a>
+    <a href="#anggota">Anggota</a>
+    <a href="#pengurus">Pengurus</a>
+    <a href="#agenda">Agenda</a>
+</nav>
+
+<section id="pengurus">
+    <h2>Pengurus MLU</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>Ketua</h3>
+            <p>Nama Ketua MLU</p>
+        </div>
+        <div class="card">
+            <h3>Wakil Ketua</h3>
+            <p>Sandi (Dayyan)</p>
+            <p>ID MLU: 0002-2005</p>
+        </div>
+    </div>
+</section>
+
+<section id="anggota">
+    <h2>Daftar Anggota</h2>
+    <input type="text" id="search" placeholder="Cari anggota...">
+    <div class="card-grid" id="memberList">
+        <div class="card member"><h3>Sandi (Dayyan)</h3><p>Wakil Ketua</p></div>
+        <div class="card member"><h3>Anggota MLU</h3><p>Komunitas</p></div>
+    </div>
+</section>
+
+<section id="agenda">
+    <h2>Agenda MLU</h2>
+    <div class="card">
+        <p>Kopdar rutin setiap akhir pekan sesuai pengumuman resmi MLU.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 MLU - Maka Lintas Utara</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
